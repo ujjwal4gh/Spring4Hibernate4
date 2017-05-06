@@ -11,7 +11,8 @@
 
     <context:property-placeholder location="classpath:application.properties"/>
     
-    <context:component-scan base-package="source.codes"/>
+    <context:component-scan base-package="source.codes.dao,
+    source.codes.service"/>
     
     <tx:annotation-driven transaction-manager="transactionManager"/>
     
